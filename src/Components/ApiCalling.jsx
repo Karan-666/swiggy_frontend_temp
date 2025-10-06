@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 function UseApiCalling() {
   const [RestaurantArr, setRestaurantArr] = useState([]);
 
-  // calling swiggy api
+  // calling swiggy api //
   /*
   const api =
     "https://www.swiggy.com/dapi/restaurants/list/v5?lat=25.5937003&lng=85.1546589&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
