@@ -5,7 +5,7 @@ function UseApiCalling() {
   const [RestaurantArr, setRestaurantArr] = useState([]);
 
   // calling swiggy api //
-  /*
+
   const api =
     "https://www.swiggy.com/dapi/restaurants/list/v5?lat=25.5937003&lng=85.1546589&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
   useEffect(() => {
@@ -16,19 +16,19 @@ function UseApiCalling() {
       );
     });
   }, []);
-  */
+
 
   // calling our own api
-  const api = "https://swiggy-backend-temp.onrender.com/api/restaurants";
-  useEffect(() => {
-    axios
-      .get(api, {
-        headers: { authorization: `JWT ${localStorage.getItem("token")}` },
-      })
-      .then((res) => {
-        return setRestaurantArr(res.data);
-      });
-  }, []);
+  // const api = "https://swiggy-backend-temp.onrender.com/api/restaurants";
+  // useEffect(() => {
+  //   axios
+  //     .get(api, {
+  //       headers: { authorization: `JWT ${localStorage.getItem("token")}` },
+  //     })
+  //     .then((res) => {
+  //       return setRestaurantArr(res.data);
+  //     });
+  // }, []);
 
   return RestaurantArr;
 }
